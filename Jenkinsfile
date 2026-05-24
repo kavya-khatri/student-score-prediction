@@ -11,13 +11,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'python -m pip install -r requirements.txt'
+                bat '"C:\\Users\\kavya\\anaconda3\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Train ML Model') {
             steps {
-                bat 'python train_model.py'
+                bat '"C:\\Users\\kavya\\anaconda3\\python.exe" train_model.py'
             }
         }
 
